@@ -2,7 +2,7 @@ package net.fabricmc.emerald_trap.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.TemptGoal;
-import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.passive.AbstractTraderEntity;
 import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -11,10 +11,9 @@ import org.spongepowered.asm.mixin.Mixin;
 
 
 @Mixin(VillagerEntity.class)
-public final class MixinVillagerEntity extends PathAwareEntity {
+public abstract class MixinVillagerEntity extends AbstractTraderEntity {
 
-
-	protected MixinVillagerEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
+	public MixinVillagerEntity(EntityType<? extends AbstractTraderEntity> entityType, World world) {
 		super(entityType, world);
 	}
 
