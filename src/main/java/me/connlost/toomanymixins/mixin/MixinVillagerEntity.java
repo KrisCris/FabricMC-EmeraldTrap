@@ -1,4 +1,4 @@
-package net.fabricmc.emerald_trap.mixin;
+package me.connlost.toomanymixins.mixin;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.TemptGoal;
@@ -19,8 +19,6 @@ public abstract class MixinVillagerEntity extends AbstractTraderEntity {
 
 	@Override
 	protected void initGoals() {
-		this.goalSelector.add(1, new TemptGoal(this, 1.1D, Ingredient.ofItems(Items.EMERALD_BLOCK), false));
-		this.goalSelector.add(2, new TemptGoal(this, 1.0D, Ingredient.ofItems(Items.EMERALD), false));
-		this.goalSelector.add(3, new TemptGoal(this, 0.9D, Ingredient.ofItems(Items.EMERALD_ORE), false));
+		this.goalSelector.add(1, new TemptGoal(this, 1.0D, Ingredient.ofItems(Items.EMERALD_BLOCK), false));
 	}
 }

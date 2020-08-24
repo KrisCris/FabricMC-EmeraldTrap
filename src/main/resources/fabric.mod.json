@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "emerald_trap",
-  "version": "1.0",
+  "id": "toomanymixins",
+  "version": "Alpha0.2",
 
   "name": "EmeraldTrap",
-  "description": "EmeraldTrap",
+  "description": "Lots of Mixins!",
   "authors": [
     "Conn_Lost"
   ],
@@ -14,12 +14,12 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/emerald_trap/icon.png",
+  "icon": "assets/toomanymixins/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.emerald_trap.EmeraldTrap"
+      "me.connlost.toomanymixins.TooManyMixins"
     ]
   },
   "mixins": [

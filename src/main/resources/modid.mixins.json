@@ -1,12 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.emerald_trap.mixin",
+  "package": "me.connlost.toomanymixins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "MixinVillagerEntity",
+    "MixinItem"
   ],
   "client": [
-    "MixinVillagerEntity"
+
   ],
   "injectors": {
     "defaultRequire": 1
