@@ -19,6 +19,6 @@ public abstract class MixinVillagerEntity extends AbstractTraderEntity {
 
 	@Override
 	protected void initGoals() {
-		this.goalSelector.add(1, new TemptGoal(this, 1.0D, Ingredient.ofItems(Items.EMERALD_BLOCK), false));
+		this.goalSelector.add(1, new TemptGoal(this, 0.6D, Ingredient.ofItems(Items.EMERALD_BLOCK), false));
 	}
 }
