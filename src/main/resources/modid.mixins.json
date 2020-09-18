@@ -5,7 +5,12 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "MixinVillagerEntity",
-    "MixinItem"
+    "MixinItem",
+    "MixinDamageSource",
+    "MixinLivingEntity",
+    "MixinAnvilScreenHandler",
+    "MixinAnvilScreen",
+    "MixinCommandManager"
   ],
   "client": [
 
